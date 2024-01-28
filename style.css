@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;  
+}
+
+.navbar .home,.create,.explore{
+    font-weight:bold;
+    font-size: large;
+}
+
+.navbar img{
+    height: 35px;
+    border-radius: 20px;
+}
+
+.navbar .notification {
+    height: 20px;
+    width: 20px;
+    padding-left: 30px;
+}
+
+.navbar .message{
+    height: 20px;
+}
+
+.navbar .login img{
+    height: 30px;
+    border-radius: 30px;
+}
+
+.navbar .arrow{
+    padding-left: 5px;
+}
+.navbar a{
+    padding: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.search-bar{
+    width: 60vw;
+}
+.search-bar input{
+    background-color: lightgray;
+    border: 0;
+    width: 950px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.search-bar input::placeholder{
+    padding: 25px;
+    font-weight: bolder;
+}
+
+.main{
+    margin: 1%;
+    padding: 0px ;
+    width: 99%;
+    columns: 6;
+    column-gap: 0%;
+}
+
+.main img{
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+.main img:hover{
+    filter:blur(1px);
+}
+
+@media (max-width:1020px) {
+    .logo, .home, .explore, .create, .notification, .message, .login{
+        display: flex;
+        align-items: flex-start;     
+    }
+
+    .navbar{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .navbar .notification{
+        padding-left: 5px;
+    }
+    .navbar img{
+        width: auto;
+    }
+    .navbar a{
+        padding: 5px;
+    }
+    .search-bar{
+        display: flex;
+        align-items: flex-start;
+        width: 50vw;
+    }
+    .search-bar input{
+        width: 800vw;
+    }
+    .main{
+        margin: 1% ;
+        columns: 5; 
+        width: 99%;
+        column-gap: 1%;   
+    }
+    .main img{
+        margin: 1%;
+        width: 95%;
+    }
+}
+
+@media  (max-width:714px) {
+    .home, .create, .message{
+        display: none;
+    }
+    .navbar img{
+        width: auto;
+    }
+    .search-bar{
+        display: flex;
+        align-items: flex-start;
+        width: 50vw;
+    }
+    .main{
+        margin: 1%;
+        width: 99%;
+        columns: 3; 
+        column-gap: 1%;  
+    }
+    .main img{
+        width: 95%;
+    }
+}
+
+@media (max-width:420px) {
+    .home, .explore, .create, .notification, .message, .login{
+        display: none;
+    }
+
+    .navbar{
+        padding: 0px;
+        margin: 0px;
+        justify-content: space-between;
+    }
+    .navbar .arrow{
+        padding: 0px;
+    }
+    .navbar img{
+        width: auto;
+    }
+    .navbar .logo{
+        padding-right: 5px;
+    }
+    .navbar a{
+        padding: 5px;
+        padding-right: 25px;
+    }
+    .search-bar{
+        display: flex;
+        align-items: flex-start;
+        padding-left: 0px;
+    }
+    .search-bar input{
+        width: 150px;
+    }
+    .main{
+        margin: 1%;
+        width: 99%;
+        columns: 2; 
+        column-gap: 0;  
+    }
+    .main img{
+
+        width: 95%;
+    }
+}
